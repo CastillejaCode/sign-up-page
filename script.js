@@ -5,9 +5,10 @@ const pwd = document.querySelector('#pwd');
 const pwdConfirm = document.querySelector('#pwd-confirm');
 const pwdLabel = document.querySelector('.pwd-label');
 const pwdLabelConfirm = document.querySelector('.pwd-label-confirm');
+const inputs = document.querySelectorAll('input');
 
 submit.addEventListener('click', (e) => {
-	e.preventDefault();
+	// e.preventDefault();
 	if (pwd.value !== pwdConfirm.value) {
 		pwd.classList.toggle('error');
 		pwdConfirm.classList.toggle('error');

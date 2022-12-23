@@ -85,6 +85,7 @@ body {
   flex-direction: column;
   width: 30%;
   margin: 0;
+  font-size: min(4vw, 5rem);
   background-image: url(images/Whitney.jpg);
 }
 .left > div {
@@ -97,7 +98,6 @@ body {
   width: 100%;
   padding: 0 2rem;
   background-color: rgba(0, 0, 0, 0.85);
-  font-size: 5rem;
   color: #eaeaea;
 }
 .left > div > img {
@@ -111,6 +111,7 @@ body {
   justify-content: space-around;
   align-items: flex-start;
   width: 70%;
+  margin-bottom: 5rem;
   text-align: left;
 }
 .right > p {
@@ -154,7 +155,8 @@ input:focus {
 }
 
 .error {
-  border-color: red;
+  transition: 1s;
+  background-color: rgb(255, 139, 139);
 }
 
 fieldset,
@@ -166,7 +168,7 @@ fieldset,
 .account {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
   margin-top: -7rem;
 }
@@ -182,9 +184,15 @@ fieldset,
   font-size: 1.5rem;
   color: #ffffff;
   font-weight: 600;
-  outline: none;
+  overflow: auto;
 }
 
 .log-in {
   width: 10;
+}
+
+a {
+  all: unset;
+  cursor: pointer;
+  color: #576475;
 }/*# sourceMappingURL=style.css.map */

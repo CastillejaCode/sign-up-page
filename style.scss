@@ -88,6 +88,7 @@ body {
 	flex-direction: column;
 	width: $width;
 	margin: 0;
+	font-size: min(4vw, 5rem);
 
 	background-image: url(images/Whitney.jpg);
 
@@ -103,7 +104,6 @@ body {
 		padding: 0 2rem;
 		background-color: rgba(0, 0, 0, 0.85);
 
-		font-size: 5rem;
 		color: #eaeaea;
 
 		& > img {
@@ -119,6 +119,7 @@ body {
 	justify-content: space-around;
 	align-items: flex-start;
 	width: calc(100% - $width);
+	margin-bottom: 5rem;
 
 	text-align: left;
 
@@ -169,16 +170,12 @@ input {
 		box-shadow: 2px 2px 5px grey;
 		border-color: black;
 		outline: none;
-		// &:invalid {
-		// 	box-shadow: 2px 2px 5px red;
-		// 	border-color: red;
-		// 	outline: none;
-		// }
 	}
 }
 
 .error {
-	border-color: red;
+	transition: 1s;
+	background-color: rgb(255, 139, 139);
 }
 
 fieldset,
@@ -190,7 +187,7 @@ fieldset,
 .account {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	justify-content: center;
 	width: 100%;
 	margin-top: -7rem;
 
@@ -207,9 +204,14 @@ fieldset,
 	font-size: 1.5rem;
 	color: #ffffff;
 	font-weight: 600;
-	outline: none;
+	overflow: auto;
 }
 
 .log-in {
 	width: 10;
+}
+a {
+	all: unset;
+	cursor: pointer;
+	color: #576475;
 }
