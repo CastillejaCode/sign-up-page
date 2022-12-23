@@ -6,6 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Document</title>
 		<link rel="stylesheet" href="style.css" />
+        <script defer src="script.js"></script>
 	</head>
 	<body>
 		<div class="left">
@@ -16,52 +17,49 @@
 		</div>
 		<div class="right">
 			<p class="opener">
-				To be outdoors, to experience nature, to live in the world around us.
+				To be outdoors, to experience nature, to live on this earth. <br>
+                Hiking is a great way to explore the world around you!
 				<br />
-				Sign up <strong>now</strong> to learn about the best hikes near you.
+                <br>
+				Take a hike and sign up <strong>now</strong> to learn about the best hikes near you.
 			</p>
-			
-            <div class="border">
-                <h1>Let's do this!</h1>	
-                <form action="" input="" class="input-con">
-                    <div class="input">
-                        <fieldset>
-                            <div>
-                                <label for="first-name">FIRST NAME</label>
-                                <input type="text" id="first-name" name="first-name" required/>
-                            </div>
-                            <div>
-                                <label for="email">EMAIL</label>
-                                <input type="email" id="email" name="email" />
-                            </div>
-                            <div>
-                                <label for="pwd">PASSWORD</label>
-                                <input type="password" />
-                            </div>
-                        </fieldset>
-                        
-                        <fieldset>
-                            <div>
-                                <label for="last-name">LAST NAME</label>
-                                <input type="text" id="last-name" name="last-name" />
-                            </div>
-                            <div>
-                                <label for="tele">PHONE NUMBER</label>
-                                <input type="tel" id="tele" name="tele" />
-                            </div>
-                            <div>
-                                <label for="pwd-confirm">CONFIRM PASSWORD</label>
-                                <input type="password" id="pwd-confirm" name="pwd-confirm" />
-                            </div>
-                        
-                        </fieldset>
+            <form action="" input="" id="form" name="form">
+            
+                <fieldset>
+                    <div>
+                        <label for="first-name">FIRST NAME</label>
+                        <input type="text" id="first-name" name="first-name" required/>
                     </div>
-            <div class="account">
-                <button type="submit">Create Account</button>
-                <div class="login"></div>
-                <button>Log in</button>
-            </div>
+                    <div>
+                        <label for="email">EMAIL</label>
+                        <input type="email" id="email" name="email" required/>
+                    </div>
+                    <div>
+                        <label for="pwd">PASSWORD</label>
+                        <input type="password" required/>
+                    </div>
+                </fieldset>
+            
+                <fieldset>
+                    <div>
+                        <label for="last-name">LAST NAME</label>
+                        <input type="text" id="last-name" name="last-name" required/>
+                    </div>
+                    <div>
+                        <label for="tele">PHONE NUMBER</label>
+                        <input type="tel" id="tele" name="tele" />
+                    </div>
+                    <div>
+                        <label for="pwd-confirm">CONFIRM PASSWORD</label>
+                        <input type="password" id="pwd-confirm" name="pwd-confirm" required/>
+                    </div>
+            
+                </fieldset>
             </form>
-		
+            <div class="account">
+                <button class="account-create" type="submit" form="form">Create Account</button>
+                <p>Already have an account? <a href="">Log in</a></p>
+            </div>
+          
 	</body>
 </html>

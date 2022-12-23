@@ -111,46 +111,80 @@ body {
   justify-content: space-around;
   align-items: flex-start;
   width: 70%;
-  padding: 4rem;
   text-align: left;
 }
 .right > p {
   font-size: 2rem;
 }
 
-.sign-up-container {
+form {
   display: flex;
-  flex-direction: column;
   justify-content: flex-start;
   width: 100%;
+  box-shadow: 0px 3px 5px grey;
+  background-color: white;
+  margin-top: -7rem;
 }
 
-.border {
-  box-shadow: black;
-}
-
-.input {
-  display: flex;
-  justify-content: flex-start;
-}
-
-.input {
+fieldset {
   display: flex;
   flex-direction: column;
-}
-.input > fieldset {
-  display: flex;
-  flex-direction: column;
-  font-weight: 400;
-  gap: 1rem;
-  padding: 0;
+  padding: 0rem;
+  width: min(30%, 50vh);
   border: none;
 }
-
 fieldset > div {
   display: flex;
   flex-direction: column;
+  margin: 1rem 0;
 }
 fieldset > div > label {
   font-size: 0.8rem;
+  font-weight: 550;
+}
+
+input {
+  border: solid 1.5px grey;
+  border-radius: 3px;
+}
+input:focus {
+  box-shadow: 2px 2px 5px grey;
+  border-color: black;
+  outline: none;
+}
+
+.error {
+  border-color: red;
+}
+
+fieldset,
+.opener,
+.account {
+  padding: 1rem 4rem;
+}
+
+.account {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: -7rem;
+}
+.account button {
+  margin: 1rem 0;
+}
+
+.account-create {
+  height: 4rem;
+  width: 20%;
+  border-radius: 10px;
+  background-color: #576475;
+  font-size: 1.5rem;
+  color: #ffffff;
+  font-weight: 600;
+  outline: none;
+}
+
+.log-in {
+  width: 10;
 }/*# sourceMappingURL=style.css.map */
